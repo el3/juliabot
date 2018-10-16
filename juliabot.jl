@@ -4,8 +4,8 @@ server = "chat.freenode.net"
 port = 6667
 
 c = connect(server, port)
-write(c, "USER julia|bot julialang|bot julialang|bot :This is a fun bot!\r\n")
-write(c, "NICK julia|bot\r\n")
+write(c, "USER juliabot julialangbot julialangbot :This is a fun bot!\r\n")
+write(c, "NICK juliabot\r\n")
 write(c, "PRIVMSG nickserv :iNOOPE\r\n")
 #write(c, "PRIVMSG nickserv :identify blabla\r\n")
 
